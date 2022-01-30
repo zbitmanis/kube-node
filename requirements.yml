@@ -1,3 +1,7 @@
 - src: https://github.com/zbitmanis/role_prepare_kubernetes_node.git 
   version: v1.2
   name: prepare_kubernetes_node
+
+- src: https://github.com/zbitmanis/role_install_kubernetes_node.git
+  version: v1.0
+  name: install_kubernetes_node

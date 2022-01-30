@@ -1,9 +1,17 @@
 ---
-- name: Prepare node for kubernetes install
+- name: 'Prepare node for kubernetes install'
   hosts: k8s
   become: true
   roles:
    - prepare_kubernetes_node
   tags:
     - 'prepare'
+
+- name: 'Initialize kubernetes cluster'
+  hosts: k8s
+  become: true
+  roles:
+   - install_kubernetes_node
+  tags:
+    - 'install'
 
