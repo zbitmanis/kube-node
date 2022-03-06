@@ -18,6 +18,7 @@ function createNode () {
    --zone ${_GCPZONE}\
    --subnet ${_GCPSUBNET}\
    --metadata-from-file=startup-script=${_GCPMACHINE_SCRIPT}\
+   --metadata=firestore-sa=$(base64 ${_GCPSERVICE_ACCOUNT_FILE})\
    --image-family ubuntu-1804-lts\
    --image-project ubuntu-os-cloud
 }
