@@ -17,5 +17,5 @@ gcloud compute instances describe $1 \
 }
 
 function updateSSHHost () {
-sed -e "/Host $1/{n;s/Hostname .*/Hostname $2/;}" -i ~/.ssh/config
+sed  -i -e "/Host $1/{n;s/Hostname .*/Hostname $2/;}"  ~/.ssh/config
 }
