@@ -1,0 +1,8 @@
+---
+- name: 'Install argocd'
+  hosts: k8s
+  become: true
+  roles:
+   - argocd_install
+  tags:
+    - 'prepare'
