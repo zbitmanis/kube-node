@@ -6,6 +6,6 @@
   version: v1.1
   name: install_kubernetes_node
 
-- src: https://github.com/zbitmanis/role_argocd_install.git
+- src: https://github.com/zbitmanis/role_install_argocd.git
   version: v1.1
   name: argocd_install
