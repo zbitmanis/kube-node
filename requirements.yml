@@ -3,7 +3,7 @@
   name: prepare_kubernetes_node
 
 - src: https://github.com/zbitmanis/role_install_kubernetes_node.git
-  version: v1.1
+  version: v1.2
   name: install_kubernetes_node
 
 - src: https://github.com/zbitmanis/role_install_argocd.git
