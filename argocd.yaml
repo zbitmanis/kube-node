@@ -3,6 +3,6 @@
   hosts: k8s
   become: true
   roles:
-   - argocd_install
+   - install_argocd
   tags:
-    - 'prepare'
+    - 'argocd'
